@@ -1,7 +1,7 @@
 header{
     position: -webkit-sticky;
     position: sticky;
-    top:10px;
+    top:20px;
 
 }
 
@@ -13,6 +13,7 @@ header{
     background-color: black;
     color: white;
     padding:30px;
+    margin: 10px;
         
 } 
 
@@ -23,7 +24,7 @@ header{
     color:white;
     display: inline;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 300;
     text-decoration: none;
 }
@@ -40,7 +41,7 @@ a:hover{
 #navbar {
     display: inline;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 300;
     text-decoration: none;
    
@@ -56,20 +57,20 @@ a:hover{
 
 #heading{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content:left;
     flex-wrap: wrap;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 #landing{
- width: 50%;
+ width: 45%;
  margin:2%;
  color: white;
  word-wrap:wrap;
  font-family: Inter;
- font-size: 200px;
+ font-size: 250px;
  font-weight: 700;
  animation-name:emphasis;
  animation-duration: 2s;
@@ -77,8 +78,8 @@ a:hover{
 }
 
 @keyframes emphasis{
-    50%  {font-size:170px;}
-    100% {font-size:200px;}
+    50%  {font-size:200px;}
+    100% {font-size:250px;}
   
 }
 
@@ -89,7 +90,7 @@ a:hover{
 
     position:absolute;
     left: 54%;
-    top: 60%;   
+    top: 40%;   
 }
 /* Down button */
 
@@ -133,7 +134,7 @@ a:hover{
 
    #Textcontainer{
 
-    background-color: blueviolet;
+   
     margin:5%;
     height:70%;
     width:50%;
@@ -187,14 +188,15 @@ a:hover{
     display: flex;
     flex-direction: row;
     overflow: auto;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     width:100vw;
+    height: 60vh;
 }
 
 .card{
 
-    width:600px;
-    height:423px;
+    width:40%;
+    height:50%;
     border:2px solid black;
     margin:82px;
 
