@@ -260,7 +260,7 @@ a:hover{
 /* Our service */
 
 #page3{
-    height:100vh;
+    height:80vh;
    
 }
 
@@ -301,6 +301,13 @@ a:hover{
     font-family:'Times New Roman', Times, serif;
     
 
+}
+
+hr{
+    color: black;
+    border-width: 5px;
+    border-color: black;
+    width: 80%;
 }
 
 
