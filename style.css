@@ -47,32 +47,196 @@ a:hover{
 
 }
 
-#heading{
+/* Business landing page */
+
+#page1{
     background-color: black;
+   
+}
+
+#heading{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content:space-end;
+    justify-content:left;
+    flex-wrap: wrap;
+    padding: 50px;
 }
 
 #landing{
  width: 50%;
- margin:50px;
+ margin:2%;
  color: white;
  word-wrap:wrap;
  font-family: Inter;
  font-size: 200px;
  font-weight: 700;
- line-height: 242.05px;
+ animation-name:emphasis;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes emphasis{
+    50%  {font-size:170px;}
+    100% {font-size:200px;}
   
 }
 
 #imagecontainer1{
-   
-width: 100px;
-height: 100px;
-left: 100px;
-top: 100px;
-background-color: red;
+  
+    width:30%;
+    height:37%;
+
+    position:absolute;
+    left: 54%;
+    top: 60%;   
 }
+/* Down button */
+
+#downbutton{
+    width:100vw;
+    display: flex;
+    justify-content: center;  
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 15px 15px 0;
+    display: inline-block;
+    padding: 15px;
+  }
+
+.bottom {
+    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* About us page */
+
+
+    #ABcontainer{
+
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width:100vw;
+        justify-content: center;
+
+   }
+
+   #imagecontainer2{
+    margin:5%;
+    height:70%;
+    width:25%;
+
+   }
+
+   #Textcontainer{
+
+    background-color: blueviolet;
+    margin:5%;
+    height:70%;
+    width:50%;
+
+   }  
+
+.title{
+    font-family: Inter;
+    font-weight:700;
+    font-size:100px;
+  
+}
+
+#ABtext{
+    font-family: Inter;
+    font-weight:300;
+    font-size:24px;
+   
+}
+
+/* Need to make above code responsive */
+
+#Textcontainer2{
+
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    width:100vw;
+}
+
+.card{
+
+    width:600px;
+    height:423px;
+    border:2px solid black;
+    margin:82px;
+
+
+}
+
+.card:hover{
+
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.cardtitle{
+    font-size: 50px;
+    font-weight: 400;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.cardtext{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
+
+/* Form page */
+
+#page4{
+    background-color: black;
+    color: white;
+    padding:5%;
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    font-size:24px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    margin: 15px;
+    padding: 1%;
+}
+
+#submit-btn{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight:300;
+    width: 200px;
+    height: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
