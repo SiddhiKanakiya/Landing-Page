@@ -12,9 +12,28 @@ header{
     justify-content: space-between;
     background-color:black;
     color: white;
-    padding:30px;
-    
-        
+    padding:30px;     
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    #headcontainer1{
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color:black;
+        color: white;
+        padding:30px;     
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        display: block;
+    }
 } 
 
 #name{
@@ -63,7 +82,7 @@ a:hover{
  width: 45%;
  margin:2%;
  color: white;
- word-wrap:wrap;
+ 
  font-family: 'Times New Roman', Times, serif;
  font-size: 150px;
  font-weight: 700;
@@ -82,19 +101,19 @@ a:hover{
 
 #imagecontainer1{
   
-    width:30%;
-    height:37%;
+    width:700px;
+    height:395px;
 
     position:absolute;
-    left: 54%;
+    left: 50%;
     top: 40%;   
 }
 /* Down button */
 
 #downbutton{
     position: absolute;
-    left:50%;
-    top:90%;
+    left:43%;
+    top:94%;
 }
 
 .arrow {
@@ -108,6 +127,57 @@ a:hover{
     transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+@media screen and (min-width:426px) and (max-width:1024px){
+    #landing{
+        font-size: 100px;
+    }
+    #imagecontainer1{
+  
+    width:350px;
+    height:255px;
+
+    position:absolute;
+    left: 50%;
+    top: 52%; 
+    }
+
+    #downbutton{
+        position: absolute;
+        left:38%;
+        top:94%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:426px){
+    #landing{
+        font-size: 50px;
+    }
+
+    #imagecontainer1{
+  
+        width:150px;
+        height:100px;
+    
+        position:absolute;
+        left: 50%;
+        top: 60%; 
+        }
+    
+        #downbutton{
+            position: absolute;
+            left:38%;
+            top:80%;
+        }
+    
+        .arrow {
+            border: solid white;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            padding: 5px;
+          }
+
+}
+
 
 /* About us page */
 
@@ -144,7 +214,15 @@ a:hover{
     font-weight: 300;
 
    }
-   @media screen and (max-width: 426px) {
+
+   .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:700;
+    font-size:100px;
+  
+}
+
+   @media screen and (min-width:320px) and (max-width: 768px) {
     #ABcontainer{
 
         display: flex;
@@ -156,52 +234,51 @@ a:hover{
    }
 
    #imagecontainer2{
-    margin:5%;
     
+    height:50%;
     width:100%;
-
    }
 
-
-    #Textcontainer{
-        width: 100%;
-        background-color: blue;
-    }
-}  
-
-.title{
-    font-family: Inter;
-    font-weight:700;
-    font-size:100px;
+   .title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size:30px;
   
 }
 
-/* Need to make above code responsive */
+#ABtext{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 300;
+    
+} 
+   } 
+
+
+
 
 /* Our service */
 
 #page3{
     height:100vh;
-    width: 100vw;
+   
 }
 
 #Textcontainer2{
-
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
     overflow-x: scroll;
-    width:100vw;
     height: 60vh;
+    
 }
 
 .card{
-
-    width:40%;
-    height:80%;
+ 
+    width:600px;
     border:2px solid black;
-    margin:82px;
-
+    margin:30px;
 
 }
 
@@ -255,6 +332,25 @@ input{
     height: 50px;
 
 }
+
+@media screen and (min-width:320px) and (max-width: 768px) {
+input{
+    width: 80%;
+    font-size:14px;    
+}
+
+#submit-btn{
+   
+    font-size: 14px;
+    font-weight:300;
+    width: 100px;
+    height: 25px;
+
+}
+
+}
+
+
 
 
 
