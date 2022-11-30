@@ -248,7 +248,7 @@ a:hover{
 
 #ABtext{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 300;
     
 } 
@@ -276,7 +276,7 @@ a:hover{
 
 .card{
  
-    width:600px;
+    min-width:600px;
     border:2px solid black;
     margin:30px;
 
@@ -302,6 +302,33 @@ a:hover{
     
 
 }
+
+@media screen and (min-width:320px) and (max-width: 768px) {
+    .cardtitle{
+        font-size: 15px;
+        font-weight: 400;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    .cardtext{
+        margin-top: 5px;
+        font-size: 10px;
+        font-weight: 300;
+        font-family:'Times New Roman', Times, serif;
+        
+    
+    }
+    .card{ 
+        min-width:200px;
+        max-height: 250px;
+        border:2px solid black;
+        margin:15px;
+    
+    }
+    
+    }
+
+
 
 hr{
     color: black;
