@@ -1,7 +1,7 @@
 header{
     position: -webkit-sticky;
     position: sticky;
-    top:20px;
+    top:10px;
 
 }
 
@@ -10,21 +10,18 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color:black;
     color: white;
     padding:30px;
-    margin: 10px;
+    
         
 } 
-
-
-
 
 #name{
     color:white;
     display: inline;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 24px;
     font-weight: 300;
     text-decoration: none;
 }
@@ -41,23 +38,21 @@ a:hover{
 #navbar {
     display: inline;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 24px;
     font-weight: 300;
     text-decoration: none;
-   
-
 }
 
 /* Business landing page */
 
 #page1{
     background-color: black;
-   
+    width: 100vw;
+    height: 90vh;
 }
 
 #heading{
     width: 100vw;
-    height: 80vh;
     display: flex;
     justify-content:left;
     flex-wrap: wrap;
@@ -69,18 +64,20 @@ a:hover{
  margin:2%;
  color: white;
  word-wrap:wrap;
- font-family: Inter;
- font-size: 250px;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 150px;
  font-weight: 700;
- animation-name:emphasis;
+ animation-name:colorchange;
  animation-duration: 2s;
  animation-iteration-count: infinite;
 }
 
-@keyframes emphasis{
-    50%  {font-size:200px;}
-    100% {font-size:250px;}
-  
+@keyframes colorchange{
+    0%  {color:white};
+    25%  {color: rgb(226, 166, 186)}
+    50%  {color: rgb(226, 118, 154)}
+    100%  {color: rgb(226, 57, 113)}
+ 
 }
 
 #imagecontainer1{
@@ -95,9 +92,9 @@ a:hover{
 /* Down button */
 
 #downbutton{
-    width:100vw;
-    display: flex;
-    justify-content: center;  
+    position: absolute;
+    left:50%;
+    top:90%;
 }
 
 .arrow {
@@ -115,7 +112,7 @@ a:hover{
 /* About us page */
 
 
-    #ABcontainer{
+#ABcontainer{
 
         display: flex;
         flex-direction: row;
@@ -123,7 +120,7 @@ a:hover{
         width:100vw;
         justify-content: center;
 
-   }
+}
 
    #imagecontainer2{
     margin:5%;
@@ -136,14 +133,14 @@ a:hover{
 
    
     margin:5%;
-    height:70%;
+    height:100%;
     width:50%;
 
    }
 
    #ABtext{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 300;
 
    }
@@ -183,12 +180,17 @@ a:hover{
 
 /* Our service */
 
+#page3{
+    height:100vh;
+    width: 100vw;
+}
+
 #Textcontainer2{
 
     display: flex;
     flex-direction: row;
     overflow: auto;
-    /* flex-wrap: nowrap; */
+    overflow-x: scroll;
     width:100vw;
     height: 60vh;
 }
@@ -196,7 +198,7 @@ a:hover{
 .card{
 
     width:40%;
-    height:50%;
+    height:80%;
     border:2px solid black;
     margin:82px;
 
@@ -210,16 +212,17 @@ a:hover{
     transition: 0.3s;
 }
 .cardtitle{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     font-family:'Times New Roman', Times, serif;
 }
 
 .cardtext{
-    margin-top: 15px;
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 20px;
     font-weight: 300;
     font-family:'Times New Roman', Times, serif;
+    
 
 }
 
